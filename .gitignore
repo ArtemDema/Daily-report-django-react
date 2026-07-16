@@ -1,0 +1,96 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Django local configuration and secrets
+.env
+local_settings.py
+
+# Database (Default SQLite file)
+db.sqlite3
+*.db
+
+# Media and Static folders
+/media/
+/static_cdn/
+/staticfiles/
+
+# Build and distribution packages
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# Log files
+*.log
+pip-log.txt
+
+# OS and Code Editor specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Production / Build Artifacts
+/dist
+/build
+/out
+
+# Testing and Coverage
+/coverage
+*.lcov
+
+# Environment Variables and Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and System Files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Vite/Next.js/Turbopack caches
+.vite
+.next/
+.turbo/
+.eslintcache
