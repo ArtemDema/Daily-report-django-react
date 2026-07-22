@@ -4,33 +4,58 @@ import axios from 'axios'
 import React from 'react'
 
 class App extends React.Component{
-  state = {details: [], }
+  // state = {details: [], }
 
-  componentDidMount(){
-    let data;
-    axios.get("http://127.0.0.1:8000/authorization")
-    .then(responce => {
-      data = responce.data;
-      this.setState({
-        details: data
-      })
-    })
-    .catch(error => {
-      console.log(error)
-    })
-  }
+  // componentDidMount(){
+  //   let data;
+  //   axios.get("http://127.0.0.1:8000/authorization")
+  //   .then(responce => {
+  //     data = responce.data;
+  //     this.setState({
+  //       details: data
+  //     })
+  //   })
+  //   .catch(error => {
+  //     console.log(error)
+  //   })
+  // }
+
+  // <div>
+  // <h2>Тест Информация</h2>
+  // <hr/>
+  // {this.state.details.map((output, id) => (
+  //   <div>
+  //     <h4>{output.username}</h4>
+  //     <h4>{output.email}</h4>
+  //   </div>
+  // ))}
+  // </div>
 
   render() {
     return (
-      <div>
-        <h2>Тест Информация</h2>
-        <hr/>
-        {this.state.details.map((output, id) => (
-          <div>
-            <h4>{output.username}</h4>
-            <h4>{output.email}</h4>
+      <div className='main-div'>
+        <header></header>
+
+        <div className='content-div'>
+
+          <div className='left-side'>
+            <div className='name-left-div'>
+              <h3>Выбрать дату</h3>
+            </div>
           </div>
-        ))}
+
+          <div className='front-side'>
+            <h2>Как прошёл ваш день?</h2>
+          </div>
+
+          <div className='right-side'>
+            <div className='name-right-div'>
+              <h3>Последние записи</h3>
+            </div>
+          </div>
+
+        </div>
+        
       </div>
     )
   }

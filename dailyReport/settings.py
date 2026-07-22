@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'authorization'
+    'authorization_app',
+    'home_app',
+    'reports_app',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +61,7 @@ REST_FRAMEWORK = {
     )
 }
 
-AUTH_USER_MODEL = "authorization.User"
+AUTH_USER_MODEL = "authorization_app.User"
 
 CORS_ORIGIN_ALLOW_ALL = True
 
