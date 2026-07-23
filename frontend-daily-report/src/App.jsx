@@ -1,7 +1,12 @@
 import { useState } from 'react'
-import './App.css'
 import axios from 'axios'
 import React from 'react'
+
+import LastReports from "../components/LastReports"
+import Header from "../components/Header"
+import SelectDate from "../components/SelectDate"
+import Emotions from "../components/Emotions"
+import ReportForm from "../components/ReportForm"
 
 class App extends React.Component{
   // state = {details: [], }
@@ -33,25 +38,29 @@ class App extends React.Component{
 
   render() {
     return (
-      <div className='main-div'>
-        <header></header>
+      <div className='mainDiv'>
+        <Header />
 
-        <div className='content-div'>
+        <div className='contentDiv'>
 
-          <div className='left-side'>
-            <div className='name-left-div'>
+          <div className='leftSide'>
+            <div className='nameLeftDiv'>
               <h3>Выбрать дату</h3>
+              <SelectDate />
             </div>
           </div>
 
-          <div className='front-side'>
+          <div className='frontSide'>
             <h2>Как прошёл ваш день?</h2>
+            <Emotions />
+            <ReportForm />
           </div>
 
-          <div className='right-side'>
-            <div className='name-right-div'>
+          <div className='rightSide'>
+            <div className='nameRightDiv'>
               <h3>Последние записи</h3>
             </div>
+            <LastReports />
           </div>
 
         </div>

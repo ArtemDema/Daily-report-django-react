@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, p, body{
 }
 
 
-html, body, #root, .content-div{
+html, body, #root, .contentDiv{
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,11 +21,11 @@ html, body, #root, .content-div{
   background-color: #C8999A;
 }
 
-.content-div {
+.contentDiv {
   height: calc(100% - 70.66666666666666px);
 }
 
-.main-div{
+.mainDiv{
   width: 100%;
   height: 100%;
   display: flex;
@@ -35,7 +35,7 @@ html, body, #root, .content-div{
   flex-wrap: wrap;
 }
 
-.main-div h2{
+.mainDiv h2{
   color: white;
   font-size: 46px;
 }
@@ -48,7 +48,7 @@ header{
   background-color: #DF8D8E;
 }
 
-.left-side, .right-side{
+.leftSide, .rightSide{
   max-width: 320px;
   width: 100%;
   height: 100%;
@@ -59,7 +59,7 @@ header{
   align-items: center;
 }
 
-.name-left-div, .name-right-div{
+.nameLeftDiv, .nameRightDiv{
   width: 100%;
   height: 3.6%;
   background-color: #D88080;
@@ -69,12 +69,12 @@ header{
   align-items: center;
 }
 
-.name-left-div, .name-right-div h3{
+.nameLeftDiv, .nameRightDiv h3{
   color: white;
   font-size: 28px;
 }
 
-.front-side{
+.frontSide{
   max-width: 1280px;
   width: 100%;
   height: 100%;
@@ -85,4 +85,31 @@ header{
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
+}
+
+#excellent{
+    background-color: #7300FF;
+    opacity: 67%;
+}
+
+#fine{
+    background-color: #FF00D0;
+    opacity: 100%;
+}
+
+#good{
+    background-color: #0095FF;
+}
+
+#notBad{
+    background-color: #00FF99;
+}
+
+#bad{
+    background-color: #FF9500;
+}
+
+#terrible{
+    background-color: #FF0000;
+    opacity: 44%;
 }
