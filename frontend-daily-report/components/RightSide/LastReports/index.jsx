@@ -1,11 +1,5 @@
 import lastReportsStyles from "./LastReports.module.css"
 
-            // <div className={emotionsStyles.emotion} id="excellent"></div>
-            // <div className={emotionsStyles.emotion} id="fine"></div>
-            // <div className={emotionsStyles.emotion} id="good"></div>
-            // <div className={emotionsStyles.emotion} id="notBad"></div>
-            // <div className={emotionsStyles.emotion} id="bad"></div>
-            // <div className={emotionsStyles.emotion} id="terrible"></div>
 // временно реализованы пустышки. В них нет никакой информации и они нужны только для того, что бы показать будущие 
 // стили и смысл компонента
 function LastReports() {
