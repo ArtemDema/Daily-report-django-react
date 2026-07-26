@@ -10,7 +10,6 @@ class AuthorizationRender(APIView):
         output = [
             {
                 "username": output.username,
-                "email": output.email
             } for output in User.objects.all()
         ]
         return Response(output)
