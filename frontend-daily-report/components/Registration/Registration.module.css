@@ -1,0 +1,63 @@
+.header{
+  justify-content: center !important;
+}
+
+header h1{
+  font-size: 27px;
+}
+
+.formDiv{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RegistrationForm, .ConfirmEmailForm, .AuthForm{
+  width: 100%;
+  max-width: 530px;
+  height: 100%;
+  max-height: 530px;
+  background-color: #FFE0E1;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.RegistrationForm input, .ConfirmEmailForm input, .AuthForm input{
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 30px;
+}
+
+.RegistrationForm button, .ConfirmEmailForm button, .AuthForm button{
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 55px;
+  background-color: #00E4FE;
+  border: none;
+  border-radius: 15px;
+  font-family: "JejuGothic";
+  font-size: 14px;
+}
+
+.ConfirmEmailForm form, .RegistrationForm form, .AuthForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+}

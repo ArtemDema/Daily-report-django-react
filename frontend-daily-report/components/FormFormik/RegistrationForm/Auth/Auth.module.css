@@ -1,0 +1,14 @@
+.formDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  height: 25%;
+}
+
+.formDiv div{
+  font-size: 14px;
+}
