@@ -100,3 +100,7 @@ header{
     background-color: #FF0000;
     opacity: 44%;
 }
+
+#weekend{
+  background-color: #FFCCCC !important;
+}

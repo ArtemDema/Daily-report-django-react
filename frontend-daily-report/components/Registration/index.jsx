@@ -1,6 +1,5 @@
 import registrationStyles from "./Registration.module.css"
 import RegistrationForm from "../FormFormik/RegistrationForm/Register"
-import ConfirmEmailForm from "../FormFormik/RegistrationForm/ConfirmEmail"
 import AuthForm from "../FormFormik/RegistrationForm/Auth"
 
 
@@ -20,10 +19,6 @@ function RegistrationPage() {
                         <div className={registrationStyles.RegistrationForm}>
                             <RegistrationForm />
                         </div>
-                        
-                        {/* <div className={registrationStyles.ConfirmEmailForm}>
-                            <ConfirmEmailForm />
-                        </div> */}
                         
                         {/* <div className={registrationStyles.AuthForm}>
                             <AuthForm />
