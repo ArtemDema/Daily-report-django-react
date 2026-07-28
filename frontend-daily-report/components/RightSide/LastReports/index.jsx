@@ -1,60 +1,14 @@
 import lastReportsStyles from "./LastReports.module.css"
 
-// временно реализованы пустышки. В них нет никакой информации и они нужны только для того, что бы показать будущие 
-// стили и смысл компонента
-function LastReports() {
+function LastReports({emotion, monthNumber, monthNumberDay}) {
+
+    const month = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"]
     return(
         <div className={lastReportsStyles.lastReportsDiv}>
             <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="good"></div>
-                <h4>Посмотреть запись за n месяц</h4>
+                <div className={lastReportsStyles.emotion} id={emotion}></div>
+                <h4>Посмотреть запись за {monthNumberDay} {month[monthNumber - 1]}</h4>
             </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="terrible"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="excellent"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="excellent"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-                
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="notBad"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="good"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="good"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="bad"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="bad"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
-            <div className={lastReportsStyles.lastReport}>
-                <div className={lastReportsStyles.emotion} id="bad"></div>
-                <h4>Посмотреть запись за n месяц</h4>
-            </div>
-
         </div>
     )
 }

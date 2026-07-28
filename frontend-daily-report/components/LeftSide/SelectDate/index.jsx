@@ -15,8 +15,8 @@ function SelectDate({countSkip, countDays, monthId}) {
         <h2 className={selectDateStyles.monthName} >{months[monthId - 1]}</h2>
         <div className={selectDateStyles.month}>
           {daysArray.map((day, index) => (
-            <div key={index} className={day === null ? selectDateStyles.monthDayNull : selectDateStyles.monthDay} id={index % 7 == 5 || index % 7 === 6 ? "weekend" : "workDay"}>
-                <h2 className={selectDateStyles.numberOfDay} >{day}</h2>
+            <div key={index} className={`${day === null ? selectDateStyles.monthDayNull : selectDateStyles.monthDay} ${index % 7 == 5 || index % 7 === 6 ? "weekend" : "workDay"}`}>
+                <h2 className={selectDateStyles.numberOfDay}>{day}</h2>
             </div>
           ))}
         </div>
