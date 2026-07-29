@@ -2,5 +2,5 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path("", AuthorizationRender.as_view(), name = "authorization")
+    path("register/", AuthorizationRender.as_view(), name = "authorization")
 ]

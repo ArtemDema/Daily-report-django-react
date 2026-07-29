@@ -47,9 +47,6 @@ const RegistrationForm = () => {
           <button type="submit">
             Подтвердить
           </button>
-
-          <h5>Уже регистрировались и у вас есть аккаунт?</h5>
-          <h6>Перейти к авторизации</h6>
         </Form>
       )
       }

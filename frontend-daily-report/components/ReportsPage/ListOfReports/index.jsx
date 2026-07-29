@@ -15,16 +15,10 @@ function ListOfReports({day, month, year, emotion, text}) {
             <h5>{text}</h5>
           </div>
 
-          <div className={listOfReportsStyles.reportPhotos}>
-            <div className={listOfReportsStyles.examplePhoto}></div>
-            <div className={listOfReportsStyles.examplePhoto}></div>
-            <div className={listOfReportsStyles.examplePhoto}></div>
-          </div>
-
-          <div className={listOfReportsStyles.reportEdit}>
+          {/* <div className={listOfReportsStyles.reportEdit}>
             <div className={listOfReportsStyles.reportDeleteButton}></div>
             <div className={listOfReportsStyles.reportEditButton}></div>
-          </div>
+          </div> */}
         </div>
       </>
     )

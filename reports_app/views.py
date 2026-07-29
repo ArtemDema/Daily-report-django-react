@@ -9,8 +9,9 @@ class ReportRender(APIView):
     def get(self, request):
         output = [
             {
-                "username": output.username,
-            } for output in User.objects.all()
+                "emotion": output.emotion,
+                "date": output.date
+            } for output in ReportModel.objects.all()
         ]
         return Response(output)
 

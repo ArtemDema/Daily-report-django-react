@@ -1,7 +1,7 @@
 .lastReportsDiv{
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 20px;
     gap: 20px;

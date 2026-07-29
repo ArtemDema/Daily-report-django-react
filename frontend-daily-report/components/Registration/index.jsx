@@ -1,7 +1,5 @@
 import registrationStyles from "./Registration.module.css"
 import RegistrationForm from "../FormFormik/RegistrationForm/Register"
-import AuthForm from "../FormFormik/RegistrationForm/Auth"
-
 
 function RegistrationPage() {
     return(
@@ -13,16 +11,12 @@ function RegistrationPage() {
             <div className='contentDiv'>
                 <div className='leftSide'></div>
 
-                <div className='frontSide'>
+                <div className={registrationStyles.frontSide}>
 
                     <div className={registrationStyles.formDiv}>
                         <div className={registrationStyles.RegistrationForm}>
                             <RegistrationForm />
                         </div>
-                        
-                        {/* <div className={registrationStyles.AuthForm}>
-                            <AuthForm />
-                        </div> */}
                     </div>
                 </div>
 

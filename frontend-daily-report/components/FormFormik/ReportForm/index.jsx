@@ -6,7 +6,7 @@ import ReportsFormStyles from "./ReportForm.module.css"
 const ReportsForm = () => {
   return (
     <Formik
-      initialValues={{ email: '', password: '', confirm_password: '' }}
+      initialValues={{ text: '', emotion: ''}}
       validationSchema={ReportSchema}
       onSubmit={async (values, { setSubmitting, setErrors, resetForm }) => {
             const response = await fetch('http://127.0.0.1:8000/reports/', {
@@ -30,9 +30,6 @@ const ReportsForm = () => {
           </div>
 
           <div className={ReportsFormStyles.buttons}>
-            <input id="photo" name="photo" type="file" accept="image/*"
-            placeholder="Добавить фотографии" />
-
             <button type="submit" className={ReportsFormStyles.saveReportButton}>Сохранить</button>
           </div>
         </Form>

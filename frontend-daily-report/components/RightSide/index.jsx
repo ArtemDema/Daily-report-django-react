@@ -1,22 +1,38 @@
 import rightSideStyles from "./RightSide.module.css"
 import LastReports from "./LastReports"
+import React from 'react'
+import { useState } from 'react'
+import axios from 'axios'
 
-function rightSide() {
-    return(
-        <div className='rightSide'>
-            <div className='nameRightDiv'>
-              <h3>Последние записи</h3>
-            </div>
-            <LastReports emotion={"good"} monthNumber={7} monthNumberDay={27} />
-            <LastReports emotion={"terrible"} monthNumber={7} monthNumberDay={26} />
-            <LastReports emotion={"notBad"} monthNumber={7} monthNumberDay={25} />
-            <LastReports emotion={"good"} monthNumber={7} monthNumberDay={24} />
-            <LastReports emotion={"fine"} monthNumber={7} monthNumberDay={23} />
-            <LastReports emotion={"good"} monthNumber={7} monthNumberDay={22} />
-            <LastReports emotion={"good"} monthNumber={7} monthNumberDay={21} />
-            <LastReports emotion={"good"} monthNumber={7} monthNumberDay={20} />
-          </div>
-    )
+class rightSide extends React.Component{
+  state = {details: [], }
+
+  componentDidMount(){
+    let data;
+    axios.get("http://127.0.0.1:8000/reports/")
+    .then(responce => {
+      data = responce.data;
+      this.setState({
+        details: data
+      })
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  }
+
+  render() {
+    return (
+      <div className='rightSide'>
+        <div className='nameRightDiv'>
+          <h3>Последние записи</h3>
+        </div>
+        {this.state.details.map((output, id) => (
+          <LastReports emotion={output.emotion} monthNumber={7} monthNumberDay={27} key={id}/>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default rightSide
