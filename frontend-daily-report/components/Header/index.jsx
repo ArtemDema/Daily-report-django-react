@@ -3,8 +3,8 @@ import headerStyles from "./Header.module.css"
 function Header() {
     return(
         <header>
-            <h1 id={headerStyles.username}>Имя аккаунта</h1>
-            <h1 id={headerStyles.myReports}>Мои записи</h1>
+            <a href="http://localhost:5173/">Домашняя страница</a>
+            <a href="http://localhost:5173/myreports/">Мои записи</a>
             <button type="button" id={headerStyles.exitButton}>Выход</button>
         </header>
 

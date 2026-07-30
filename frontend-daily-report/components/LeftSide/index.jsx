@@ -10,6 +10,7 @@ function leftSide() {
             <div className={leftSideStyles.monthDiv}>
                 <SelectDate countSkip={0} countDays={31} monthId={8} />
                 <SelectDate countSkip={3} countDays={30} monthId={9} />
+                <SelectDate countSkip={5} countDays={31} monthId={10} />
             </div>
         </div>
     )

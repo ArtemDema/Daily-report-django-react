@@ -6,9 +6,11 @@ import ReportsFormStyles from "./ReportForm.module.css"
 const ReportsForm = () => {
   return (
     <Formik
-      initialValues={{ text: '', emotion: ''}}
+      initialValues={{ text: ''}}
       validationSchema={ReportSchema}
       onSubmit={async (values, { setSubmitting, setErrors, resetForm }) => {
+            values["emotion"] = document.querySelector(".active").id
+
             const response = await fetch('http://127.0.0.1:8000/reports/', {
               method: 'POST',
               headers: {

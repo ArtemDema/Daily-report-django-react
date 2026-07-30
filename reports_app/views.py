@@ -10,7 +10,8 @@ class ReportRender(APIView):
         output = [
             {
                 "emotion": output.emotion,
-                "date": output.date
+                "date": output.date,
+                "text": output.text
             } for output in ReportModel.objects.all()
         ]
         return Response(output)

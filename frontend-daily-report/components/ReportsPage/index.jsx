@@ -36,7 +36,7 @@ class reportsPage extends React.Component{
 
           <div className={ReportsPageStyles.frontSide}>
             {this.state.details.map((output, id) => (
-              <ListOfReports day={27} month={8} year={2026} emotion={"fine"} text={'test'} key={id} />
+              <ListOfReports day={output.date.split("-")[2]} month={output.date.split("-")[1]} year={output.date.split("-")[0]} emotion={output.emotion} text={output.text} key={id} />
             ))}
           </div>
 

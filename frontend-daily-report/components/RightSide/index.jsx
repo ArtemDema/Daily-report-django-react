@@ -27,9 +27,7 @@ class rightSide extends React.Component{
         <div className='nameRightDiv'>
           <h3>Последние записи</h3>
         </div>
-        {this.state.details.map((output, id) => (
-          <LastReports emotion={output.emotion} monthNumber={7} monthNumberDay={27} key={id}/>
-        ))}
+          <LastReports />
       </div>
     );
   }

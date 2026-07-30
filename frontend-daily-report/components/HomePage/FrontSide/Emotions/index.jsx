@@ -1,16 +1,24 @@
 import emotionsStyles from "./Emotions.module.css"
+import { useState } from 'react';
 
 function Emotions() {
-    return(
-        <div className={emotionsStyles.emotionsDiv}>
-            <div className={emotionsStyles.emotion} id="excellent"></div>
-            <div className={emotionsStyles.emotion} id="fine"></div>
-            <div className={emotionsStyles.emotion} id="good"></div>
-            <div className={emotionsStyles.emotion} id="notBad"></div>
-            <div className={emotionsStyles.emotion} id="bad"></div>
-            <div className={emotionsStyles.emotion} id="terrible"></div>
-        </div>
-    )
+  function buttonClick(key) {
+    console.log("before", activeIndex, key);
+    setActiveIndex(key)
+    console.log("after", activeIndex, key);
+  }
+
+  const idButtonColor = ["excellent", "fine", "good", "notBad", "bad", "terrible"]
+  const [activeIndex, setActiveIndex] = useState(3)
+
+  return(
+    <div className={emotionsStyles.emotionsDiv}>
+      {idButtonColor.map((color, index) => (
+        <button type="button" className={`${emotionsStyles.emotion} ${activeIndex == index ? "active" : ""}`} 
+        id={color} key={index} onClick={() => buttonClick(index)}></button>
+      ))}
+    </div>
+  )
 }
 
 export default Emotions
