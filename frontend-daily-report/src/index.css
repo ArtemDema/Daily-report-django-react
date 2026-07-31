@@ -11,6 +11,15 @@ h1, h2, h3, h4, h5, h6, p, body{
   font-family: 'JejuGothic';
 }
 
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+html {
+    scrollbar-width: none;
+}
+
 
 html, body, #root, .contentDiv{
   width: 100%;
@@ -46,6 +55,7 @@ header{
   max-height: 70.66666666666666px;
   height: 100%;
   background-color: #DF8D8E;
+  display: flex;
 }
 
 .leftSide, .rightSide{
