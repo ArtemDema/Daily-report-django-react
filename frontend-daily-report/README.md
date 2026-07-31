@@ -1,16 +1,71 @@
-# React + Vite
+# Личный дневник
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+---
 
-Currently, two official plugins are available:
+## Навигация
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Цель проекта](#цель)
+- [Технології проекта / Project technologies](#технологии)
+- [Інструкції по роботі / Work instructions](#запуск)
+- [Все про додатків / All about apps](#додатки)
+- [Висновок з роботи / Conclusion from the work ](#висновок-роботи)
 
-## React Compiler
+---
+## <a id="цель">Цель создания и рзработки данного проекта:</a>
+Данный проект был создан для освоения таких технологий как React, Formik и Yup. Сам же проект позвояет делать записи по дням как в
+личном дневнике.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## <a id="технологии">Технологии проекта:</a>
+### Python:
+#### Django - фреймворк для бэк-энд разработки
+### SQL:
+#### Выступает здесь как база данных
+### Node.js
+#### Нужен лишь только для того, что бы была возможность использовать React
+### CSS
+#### Отвечает за внешний вид сайта
+### React
+#### Используется для разработки веб-приложения
+### Git
+#### Система контроля версий, на которой хранятся версии данного проекта
+### Figma
+#### Создание дизайна
+
+---
+
+## <a id="запуск">Как запустить данный проект:</a>
+
+1. >Установите Python не ниже 3.10 а также Node.js
+2. >Скачайте проект себе на устройство
+3. >Извлеките архив в удобное для вас место и откройте папку с проектом в редакторе кода(например Visual Studio Code)
+4. >Создайте два терминала. Один будет нужен для запуска бэк-энда а второй для запуска фронт-энда
+5. >В любом терминале пропишите:
+```bash
+    pip install -f requirements.txt
+    # Данная команда установит нужные библиотеки для работы бэк-энда
+```
+6. >Перейдите в папку где находится manage.py/или при записи следующих команд укажите путь к manage.py
+```bash
+    python manage.py makemigrations
+    # Создание миграций для баз данных
+    
+    python manage.py migrate
+    # Проведение самих миграций и создание всех нужных для работы БД(баз данных) таблиц
+```   
+7. >Используя первый термнал запустите бэк-энд:
+```bash
+    python manage.py runserver
+```
+8. >Используя второй термнал перейдите в папку frontend-daily-report, введите первую команду(она установить нужные библиотеки для работы React) и потом введите вторую команду, она запустит фронт-энд:
+```bash
+    npm install
+    npm run dev
+```
+7. >Что бы попасть на сам сайт вам надо перейти на локальный сервер, котрый появится в чате, где был запущен фронт-энд:
+```bash
+    http://localhost:5173/
+    # Скорее всего вам нажен именно эта ссылка
+```
